@@ -1,3 +1,3 @@
-from api import generate as kandinsky
+from kandinsky import generate
 
-kandinsky('cat','./','')
+generate(prompt="red cat", path="./0.png")
