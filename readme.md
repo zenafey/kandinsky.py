@@ -1,28 +1,18 @@
-# Неофициальный API для Kandinsky v2.1
+# kandinsky.py
+Reverse Engineered fusion-brain API
 
-## Python
-1. Положите файл из py/api.py рядом с вашим
-2. Импортируйте его
+### Installation 
 ```
-from api import generate as kandinsky # api поменяйте на название файла `api.py` без `.py` в конце
+pip install kandinsky.py
 ```
-3. Используйте
-```
-kandinsky('Кот','./') # Промпт, путь
-```
-4. Пример - py/example.py
 
-## Nodejs
-1. ```npm i axios```
-2. Положите файл из nodejs/api.js рядом с вашим
-3. Импортируйте его
+### Example of usage
+```python
+from kandinsky import generate
+
+generate(prompt="red car", path="./0.png")
 ```
-const { generate } = require(`./api.js`); # api поменяйте на название файла `api.js`
-# Или так
-import generate from './api.js';
-```
-4. Используйте
-```
-await generate('Кот','./') # Промпт, путь
-```
-5. Пример - nodejs/example.js
+image will appear in path that you specified
+
+
+![0](https://github.com/zenafey/kandinsky.py/assets/118455214/2c030508-6c17-4afe-bee4-339287db60e5)
